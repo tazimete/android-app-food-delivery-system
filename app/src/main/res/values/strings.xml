@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SmartSendApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_client_dash_board">ClientDashBoardActivity</string>
+    <string name="title_activity_rider_dashboard">RiderDashboardActivity</string>
+    <string name="title_activity_place_order">PlaceOrderActivity</string>
+    <string name="title_activity_order_details_for_rider">OrderDetailsForRiderActivity</string>
+    <string name="title_activity_accepted_rider">AcceptedRiderActivity</string>
+    <string name="title_activity_order_failed">OrderFailedActivity</string>
+</resources>

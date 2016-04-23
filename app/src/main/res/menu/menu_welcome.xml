@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.smartsend.smartsendapp.WelcomeActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/actionProfile"
+        android:icon="@drawable/icon_menu_profile"/>
+
+    <item android:id="@+id/actionOutlet"
+        android:icon="@drawable/icon_menu_outlet"/>
+
+    <item android:id="@+id/actionPlaceOrder"
+        android:icon="@drawable/icon_menu_place_order"/>
+
+</menu>

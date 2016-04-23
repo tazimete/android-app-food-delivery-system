@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/tvTitleOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_circle_title"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvTitleDeliverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orders \n Delivered Today"
+            android:textSize="8.4pt"
+            android:textColor="#5B6B7C"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="right">
+
+        <ImageView
+            android:id="@+id/ivTitleLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_title" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

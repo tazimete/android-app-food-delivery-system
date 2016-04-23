@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.smartsend.smartsendapp.PlaceOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tvTitleOrderNumber"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_circle_title"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="17pt"
+                android:padding="0dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/tvTitleDeliverText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orders \n Delivered Today"
+                android:textSize="8.4pt"
+                android:textColor="#5B6B7C"
+                android:gravity="left"
+                android:layout_marginLeft="5dp" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:layout_marginRight="0dp">
+
+                <ImageView
+                    android:id="@+id/ivTitleLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/logo_title"
+                    android:foregroundGravity="center"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#34495E"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvPlaceOrderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLACE ORDER"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_login">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup Details"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"/>
+
+                <Spinner
+                    android:id="@+id/spOutlet"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/etPickupDateAndTime"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Date and Time"
+                    android:textAlignment="center"
+                    android:textColorHint="#9B999A"
+                    android:background="@drawable/et_place_order"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvDeliverTo"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Deliver To"
+                    android:textSize="22dp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/etDeliverDateTime"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Date and Time"
+                    android:textColorHint="#9B999A"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:textColorHint="#9B999A"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/etCustomerName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer Name"
+                    android:textColorHint="#9B999A"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/etPostalCode"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Postal Code"
+                    android:maxLength="6"
+                    android:textColorHint="#9B999A"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:textColorHint="#9B999A"
+                    android:minLines="3"
+                    android:maxLines="6"
+                    android:scrollbars="vertical"
+                    android:gravity="top|center"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:editable="false"/>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUnitNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unit Number"
+                        android:textSize="20dp"
+                        android:textColor="#9B999A"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/etUnitNoFirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_place_order"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/etUnitNumberLast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_place_order"
+                        android:layout_weight="4"
+                        android:padding="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etFoodCost"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Food Cost - SGD"
+                    android:textColorHint="#9B999A"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/etReceiptNumber"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Receipt Number"
+                    android:textColorHint="#9B999A"
+                    android:background="@drawable/et_place_order"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="PLACE ORDER"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_below="@id/btnProfileOrder"
+                    android:background="@drawable/btn_place_order_style"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

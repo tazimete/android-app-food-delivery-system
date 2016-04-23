@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_login"
+    tools:context="com.example.smartsend.smartsendapp.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/logoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/etLoginUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/icon_username"
+            android:drawablePadding="15dp"
+            android:hint="Email"
+            android:textSize="12dp"
+            android:textColorHint="#AFAEAE"
+            android:textColor="#AFAEAE"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/logoLogin" />
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:textSize="12dp"
+            android:textColorHint="#AFAEAE"
+            android:textColor="#AFAEAE"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/etLoginUserEmail"/>
+
+        <RadioGroup
+            android:id="@+id/rbgLoginUserType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etLoginPassword"
+            android:gravity="center"
+            android:checkedButton="@+id/rbUserRider"
+            android:orientation="horizontal"
+            android:dividerPadding="10dp">
+
+            <RadioButton
+                android:id="@+id/rbUserRider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rider"
+                android:textColor="#AFAEAE"
+                android:textSize="12dp"
+                android:paddingLeft="5dp" />
+
+            <RadioButton
+                android:id="@+id/rbUserClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client"
+                android:textColor="#AFAEAE"
+                android:textSize="12dp"
+                android:paddingLeft="5dp"/>
+
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/btnLoginSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="#4CA1FE"
+            android:layout_below="@+id/rbgLoginUserType"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textSize="12dp"
+            android:textColor="#AFAEAE"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/btnLoginSubmit"
+            android:layout_alignRight="@+id/btnLoginSubmit"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
